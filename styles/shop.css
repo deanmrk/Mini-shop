@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    background-color: #ffff;
+    font-family: 'poppins', sans-serif;
+    margin: 0%;
+}
+.logo-img {
+    width: 70px;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 5px;
+}
+ul, li, a {
+    list-style: none;
+    text-decoration: none;
+}
+li {
+    color: #0C2C55;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    row-gap: 30px;
+    column-gap: 30px;
+    padding: 10px;
+}
+
+.product-container {
+    box-shadow: 0px 0px 10px rgba(88, 88, 88, 0.5);
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-container:active {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(52, 52, 52);
+}
+
+.product-img {
+    width: 130px;
+    height: 90px;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 3px;
+}
+
+.product-name {
+    width: auto;
+    height: 20px;
+    overflow: hidden;
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+    padding: 0%;
+    margin: 0%;
+}
+
+.product-price {
+    padding: 0px;
+    margin: 0%;
+    width: 70px;
+    text-align: center;
+    margin-left: 33px;
+    height: 20px;
+    font-size: 12px;
+    color: rgb(255, 166, 0);
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+.cart-img {
+    width: 20px;
+}
+.cart-button {
+    border: none;
+    background-color: rgb(213, 234, 252);
+    border-radius: 100%;
+    padding: 5px;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+}
+.cart-button:hover {
+    background-color: rgb(63, 130, 189);
+}
+
