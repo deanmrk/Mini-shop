@@ -13,16 +13,16 @@ cartMain.forEach( (items, i) => {
     cartItems.innerHTML += `
      <span>${items.name}</span>
      <span>$${(items.price / 100).toFixed(2)}</span>
-     <button onclick="cartMain.splice(${i}, 1); renderItem(); removeItem();">Remove</button><br>
+     <button onclick="cartMain.splice(${i}, 1);  removeItem(); renderItem();">Remove</button><br>
     `;
 });
 
 
 
-totalHtml.textContent = `Total: $${(total).toFixed(2)}`;
+totalHtml.innerHTML = `Total: $${(total).toFixed(2)}`;
 }
 
 function removeItem() {
     localStorage.removeItem('getCart');
-    cartItems.innerHTML = '';
+    window.location.reload();
 }
